@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/59cfc000aeb2844d16000075
+
 package main
 
 import (
@@ -25,39 +27,41 @@ func Capitalize(st string) []string {
 	return []string{s1,s2}
 }
 
-// func Capitalize(s string) []string {
-// 	a, b := []rune(s),[]rune(s)
-// 	for i := range a {
-// 	  if i%2 == 0 {
-// 		a[i] = unicode.ToUpper(a[i])
-// 	  }else{
-// 		b[i] = unicode.ToUpper(b[i])
-// 	  }
-// 	}
-// 	fmt.Println(string(a), string(b))
-// 	return []string{string(a), string(b)}
-// }
+/* 2nd solution:
+func Capitalize(s string) []string {
+	a, b := []rune(s),[]rune(s)
+	for i := range a {
+	  if i%2 == 0 {
+		a[i] = unicode.ToUpper(a[i])
+	  }else{
+		b[i] = unicode.ToUpper(b[i])
+	  }
+	}
+	fmt.Println(string(a), string(b))
+	return []string{string(a), string(b)}
+}
 
-
-// func Capitalize(st string) []string {
-// 	stringEven := make([]string, len(st))
-// 	stringOdd := make([]string, len(st))
-// 	for i := 0; i < len(st); i++ { 
-// 		if i % 2 == 0 {
-// 		stringEven[i] = strings.ToUpper(string(st[i]))
-// 	  } else {
-// 		stringEven[i] = string(st[i])
-// 	  }
-// 	}
-// 	for i := 0; i < len(st); i++ { 
-// 		if i % 2 != 0 {
-// 		stringOdd[i] = strings.ToUpper(string(st[i]))
-// 	  } else {
-// 		stringOdd[i] = string(st[i])
-// 	  }
-// 	}
-// 	reg := []string {string(stringOdd), stringEven}
-// 	//return (stringEven[i], stringOdd[i])
-// 	fmt.Println(stringEven,stringOdd)
-// 	return stringEven
-// }
+3rd solution:
+func Capitalize(st string) []string {
+	stringEven := make([]string, len(st))
+	stringOdd := make([]string, len(st))
+	for i := 0; i < len(st); i++ { 
+		if i % 2 == 0 {
+		stringEven[i] = strings.ToUpper(string(st[i]))
+	  } else {
+		stringEven[i] = string(st[i])
+	  }
+	}
+	for i := 0; i < len(st); i++ { 
+		if i % 2 != 0 {
+		stringOdd[i] = strings.ToUpper(string(st[i]))
+	  } else {
+		stringOdd[i] = string(st[i])
+	  }
+	}
+	reg := []string {string(stringOdd), stringEven}
+	//return (stringEven[i], stringOdd[i])
+	fmt.Println(stringEven,stringOdd)
+	return stringEven
+}
+*/

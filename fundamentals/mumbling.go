@@ -22,8 +22,7 @@ func Accum(s string) string {
     return strings.Join(parts, "-")
 }
 
-//solution2
-/*
+/* 2nd solution
 func Accum(s string) string {
     words := make([]string, len(s))
     
@@ -33,10 +32,8 @@ func Accum(s string) string {
    
     return strings.Join(words, "-")
 }
-*/
 
-//solution3
-/*
+3rd solution
 func Accum(s string) string {
     res := ""
     for i, r := range s {
@@ -50,10 +47,8 @@ func Accum(s string) string {
     }
     return res
 }
-*/
 
-//solution4
-/*
+4th solution:
 func Accum(s string) string {
     out := ""
     i := 1;
@@ -67,10 +62,8 @@ func Accum(s string) string {
     }
     return out[0:len(out)-1]
 }
-*/
 
-//solution5
-/*
+5th solution:
 func Accum(s string) string {
 	var result string
 	for pos, char := range s {
@@ -79,5 +72,5 @@ func Accum(s string) string {
 	  result += strings.Title(segment) + "-"
 	}
 	return result[:len(result)-1] // slice off final "-"
-  }
+}
 */

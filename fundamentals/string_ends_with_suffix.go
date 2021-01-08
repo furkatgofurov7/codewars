@@ -5,9 +5,6 @@ package main
 import (
 	"fmt"
 	"strings"
-	//"fmt"
-	//"strconv"
-	//"sort"
 )
 
 func main() {
@@ -17,7 +14,6 @@ func main() {
 }
 
 func solution(str, ending string) bool {
-	// Your code here!
 	if strings.HasSuffix(str, ending) {
 		fmt.Println("True! 1st argument ends with 2nd argument")
 		return true
@@ -26,12 +22,13 @@ func solution(str, ending string) bool {
 	return false 
 }
 
-// 2nd solution
-// func solution(str, ending string) bool {
-// 	return strings.HasSuffix(str, ending)
-// }
+/* 2nd solution:
+func solution(str, ending string) bool {
+	return strings.HasSuffix(str, ending)
+}
 
-// 3rd solution
-// func solution(str, ending string) bool {
-// 	return len(str) >= len(ending) && str[len(str) - len(ending):] == ending
-// }
+3rd solution:
+func solution(str, ending string) bool {
+	return len(str) >= len(ending) && str[len(str) - len(ending):] == ending
+}
+*/

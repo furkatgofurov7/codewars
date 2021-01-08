@@ -16,14 +16,15 @@ func Solution(word string) string {
   return string(reverse)
 }
 
-// 2nd and best solution
-// func Solution(word string) string {
-// 	var result = ""
-// 	for _, c := range word {
-// 	  result = string(c) + result
-// 	  fmt.Println(result)
-// 	}
-// 	fmt.Println(result)
-// 	return result
-// }
+/* 2nd and best solution:
+func Solution(word string) string {
+	var result = ""
+	for _, c := range word {
+	  result = string(c) + result
+	  fmt.Println(result)
+	}
+	fmt.Println(result)
+	return result
+}
+*/
 

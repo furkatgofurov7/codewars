@@ -35,4 +35,5 @@ func Past(h, m, s int) int {
     milliseconds *= 1000
 
     return milliseconds
-}*/
+}
+*/

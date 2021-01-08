@@ -14,14 +14,15 @@ func BoolToWord(word bool) string {
 	return "No"
 }
 
-// 2nd solution
-// func BoolToWord(word bool) string {
-// 	return map[bool]string{false:"No", true:"Yes"}[word]
-// 	a := map[bool]string{false:"No", true:"Yes"}[word]
-// 	return a
-// }
+/* 2nd solution:
+func BoolToWord(word bool) string {
+	return map[bool]string{false:"No", true:"Yes"}[word]
+	a := map[bool]string{false:"No", true:"Yes"}[word]
+	return a
+}
 
-// 3rd solution
-// func solution(str, ending string) bool {
-// 	return len(str) >= len(ending) && str[len(str) - len(ending):] == ending
-// }
+3rd solution:
+func solution(str, ending string) bool {
+	return len(str) >= len(ending) && str[len(str) - len(ending):] == ending
+}
+*/

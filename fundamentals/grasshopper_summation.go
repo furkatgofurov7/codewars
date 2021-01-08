@@ -14,27 +14,28 @@ func Summation(n int) int {
 	return res
 }
 
-// 2nd solution
-// func Summation(n int) (sum int) {
-// 	//res := 0
-// 	for i := 0; i <= n; i++ {
-// 	  sum += i
-// 	}
-// 	fmt.Println(sum)
-// 	//return res
-// 	return
-// }
+/* 2nd solution:
+func Summation(n int) (sum int) {
+	//res := 0
+	for i := 0; i <= n; i++ {
+	  sum += i
+	}
+	fmt.Println(sum)
+	//return res
+	return
+}
 
-// 3rd solution
-// func Summation(n int) int {
-// 	fmt.Println(n * (n + 1) / 2)
-// 	return n * (n + 1) / 2
-// }
+3rd solution:
+func Summation(n int) int {
+	fmt.Println(n * (n + 1) / 2)
+	return n * (n + 1) / 2
+}
 
-// 4th solution
-// func Summation(n int) int {
-//     if n == 1 {
-//       return n
-//     }
-//     return n + Summation(n - 1)
-// }
+4th solution:
+func Summation(n int) int {
+    if n == 1 {
+      return n
+    }
+    return n + Summation(n - 1)
+}
+*/

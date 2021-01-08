@@ -14,11 +14,12 @@ func RepeatStr(repetitions int, value string) string {
 	return strings.Repeat(value, repetitions)
 }
 
-// 2nd solution
-// func RepeatStr(repetitions int, value string) (res string) {
-// 	for i := 0; i < repetitions; i++ {
-// 		res += value
-// 	}
-// 	fmt.Println(res)
-// 	return
-// }
+/* 2nd solution:
+func RepeatStr(repetitions int, value string) (res string) {
+	for i := 0; i < repetitions; i++ {
+		res += value
+	}
+	fmt.Println(res)
+	return
+}
+*/
