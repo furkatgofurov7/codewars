@@ -1,26 +1,15 @@
-/*
-
-Problem Description:
-
-Grade book
-
-Complete the function so that it finds the mean of the three scores passed to it and returns the letter value associated with that grade.
-Numerical Score 	Letter Grade
-90 <= score <= 100 	'A'
-80 <= score < 90 	'B'
-70 <= score < 80 	'C'
-60 <= score < 70 	'D'
-0 <= score < 60 	'F'
-
-Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
-*/
+//https://www.codewars.com/kata/55cbd4ba903825f7970000f5
 
 package main
 
-import "fmt"
+func main() {
+  GetGrade(95, 95, 90)
+  GetGrade(55, 75, 60) 
+  GetGrade(55, 65, 50) 
+  GetGrade(85, 85, 70)
+}
 
 func GetGrade(a,b,c int) rune {
-    // Code here
   var r1, r2, r3, r4, r5 rune
   r1 = 'A'
   r2 = 'B'
@@ -29,19 +18,14 @@ func GetGrade(a,b,c int) rune {
   r5 = 'F'
   res := (a+b+c)/3
   if res >= 90 && res <= 100 {
-    fmt.Println(string(r1))
     return r1
   } else if res >= 80 && res < 90 {
-    fmt.Println(string(r2))
     return r2
   } else if res >= 70 && res < 80 {
-    fmt.Println(string(r3))
     return r3
   } else if res >= 60 && res < 70 {
-    fmt.Println(string(r4))
     return r4
   } else {
-    fmt.Println(string(r5))
     return r5
   }
 }
@@ -91,10 +75,3 @@ func GetGrade(a,b,c int) rune {
       return 'F'
     }
 }*/
-
-func main() {
-  GetGrade(95, 95, 90)
-  GetGrade(55, 75, 60) 
-  GetGrade(55, 65, 50) 
-  GetGrade(85, 85, 70)
-}

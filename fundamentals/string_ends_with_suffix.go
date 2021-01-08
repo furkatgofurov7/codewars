@@ -1,20 +1,7 @@
-/*
-
-Problem Description:
-
-Complete the solution so that it returns true if the first argument(string) passed
-in ends with the 2nd argument (also a string).
-
-Examples:
-
-solution("abc", "bc") // returns true
-solution("abc", "d") // returns false
-
-*/
+//https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
 
 package main
 
-// imported package(s)
 import (
 	"fmt"
 	"strings"
@@ -23,7 +10,12 @@ import (
 	//"sort"
 )
 
-//solution returns true or false
+func main() {
+	solution("Hello", "ll")
+	solution("allo", "lo")
+	solution("Hello", "l0")
+}
+
 func solution(str, ending string) bool {
 	// Your code here!
 	if strings.HasSuffix(str, ending) {
@@ -43,11 +35,3 @@ func solution(str, ending string) bool {
 // func solution(str, ending string) bool {
 // 	return len(str) >= len(ending) && str[len(str) - len(ending):] == ending
 // }
-
-
-// For testing the solution
-func main() {
-	solution("Hello", "ll")
-	solution("allo", "lo")
-	solution("Hello", "l0")
-}

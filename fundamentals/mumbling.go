@@ -1,36 +1,26 @@
-/*
-Problem Description:
-
-This time no story, no theory. The examples below show you how to write function accum:
-
-Examples:
-
-accum("abcd") -> "A-Bb-Ccc-Dddd"
-accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-accum("cwAt") -> "C-Ww-Aaa-Tttt"
-
-The parameter of accum is a string which includes only letters from a..z and A..Z.
-*/
+//https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
 
 package main
 
 import (
-	"fmt"
 	"strings"
-	//"unicode"
 )
+
+func main() {
+	Accum("abcd")
+	Accum("RqaEzty")
+	Accum("RRddwdag")
+	Accum("cwAt")
+	Accum("pmBeW")
+}
 
 func Accum(s string) string {
 	parts := make([]string, len(s))
-	//fmt.Println(parts)
-    
     for i := 0; i < len(s); i++ {
       parts[i] = strings.ToUpper(string(s[i])) + strings.Repeat(strings.ToLower(string(s[i])), i)
     }
-    fmt.Println(strings.Join(parts, "-"))
     return strings.Join(parts, "-")
 }
-
 
 //solution2
 /*
@@ -91,12 +81,3 @@ func Accum(s string) string {
 	return result[:len(result)-1] // slice off final "-"
   }
 */
-
-
-func main() {
-	Accum("abcd")
-	Accum("RqaEzty")
-	Accum("RRddwdag")
-	Accum("cwAt")
-	Accum("pmBeW")
-}
